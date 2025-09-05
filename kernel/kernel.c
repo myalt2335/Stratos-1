@@ -66,7 +66,7 @@ void kernel_main(void) {
         }
     }
 
-    const char *msg = "Hello, graphics mode! :)"; // There's a limit on how many characters you can write
+    const char *msg = "Hello, graphics mode! :)"; // There's a limit on how many characters you can write. I should probably fix that but I don't wanna
     int len = 0;
     while (msg[len]) len++;
 
