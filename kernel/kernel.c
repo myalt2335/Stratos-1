@@ -1,7 +1,6 @@
 #include <stdint.h>
 #include "fonts/VGA8.h"
 
-//intellisense, SHUT. THE FUCK. UP.
 #ifndef __GNUC__
   #ifndef __attribute__
     #define __attribute__(x)
@@ -12,7 +11,6 @@
 #else
   #define ASM(insn)
 #endif
-// thank you.
 
 typedef struct __attribute__((packed)) {
     uint8_t  boot_drive;
@@ -104,5 +102,6 @@ void kernel_main(void) {
 
     hang();
 }
+
 
 static const uint8_t pad_data[512] = { [0 ... 511] = 0xFF };
