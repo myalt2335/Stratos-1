@@ -95,7 +95,7 @@ print_string:
     jmp print_string
 .done:
     ret
-; and they will hear the way you called out my name
+
 enable_a20:
     in al, 0x92
     or al, 2
@@ -176,7 +176,6 @@ wait_input_clear:
     jnz .wait
     ret
 
-; they will experience unimaginable wonders.
 load_kernel:
     mov ax, 0x1000
     mov es, ax
@@ -311,3 +310,4 @@ pm_hit           db "PM OK HERE → STOP", 0
 
 stage2_end:
 times 1024 - ($ - $$) db 0
+
