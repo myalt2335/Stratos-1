@@ -1,6 +1,6 @@
 [BITS 16]
 ORG 0x7C00
-; When I am six feet underground with the bugs eating my brain,
+
 start:
     cli
     xor ax, ax
@@ -73,8 +73,6 @@ disk_msg   db "STLF", 0
 msg_gdt    db "GDTL", 0
 nl         db 0x0D, 0x0A, 0
 
-; they will get visions of you, they will smell what you smelt like
-
 gdt_start:
     dq 0
 
@@ -97,3 +95,4 @@ gdt_descriptor:
 
 times 510-($-$$) db 0
 dw 0xAA55
+
