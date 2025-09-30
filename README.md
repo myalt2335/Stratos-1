@@ -1,1 +1,1 @@
-First version of Stratos. Version uploaded is Palinode 2025.07.03
+First Version of Stratos. Version uploaded is Palinode 2025.07.03
